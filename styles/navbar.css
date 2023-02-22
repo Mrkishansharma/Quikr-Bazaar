@@ -1,0 +1,128 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* top nav bar CSS */
+
+.SS_topnav{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 5px;
+    width: 90%;
+}
+
+.SS_topnav > div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.SS_topnav_1 a{
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    text-decoration: none;
+}
+
+.SS_topnav_2 a{
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    text-decoration: none;
+}
+
+.SS_topnav_1{
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-around;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.SS_topnav_2{
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    text-align: center;
+    justify-content: space-around;
+    color: black;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+/* top nav bar CSS completed*/
+
+
+/* main nav bar CSS */
+
+
+.SS_main_navbar{
+    display: flex;
+    margin: auto;
+}
+
+.SS_main_navbar>a{
+    display: flex;
+    margin: auto;
+}
+
+.SS_navbar-logo>img{
+    width:150px ;
+    height: 65px;
+}
+
+.SS-navbar-search{
+    display: flex;
+    margin: auto;
+
+}
+
+.SS-navbar-search>input{
+    width: 350px;
+    height: 40px;
+}
+
+
+.SS-navbar-buttons{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    gap: 40px;
+    
+}
+
+.SS_top_hr{
+    border: 1.5px solid gray;
+}
+
+
+/*main nav bar completed*/
+
+/*drop down menu*/
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .SS_topnav {
+    flex-direction: column;
+  }
+  .SS_topnav > div {
+    margin: 10px 0;
+  }
+  .SS_topnav > div > a {
+    margin: 0 10px;
+  }
+}
