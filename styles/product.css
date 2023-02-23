@@ -1,0 +1,197 @@
+body{
+    overflow-x: hidden;
+}
+#rt-container{
+    display: grid;
+    border: 2px solid red;
+    grid-template-columns:repeat(3,1fr);
+     /* width: 85%; */
+    margin-top: 100px;
+    margin: auto;
+    
+}
+
+#rt-product{
+    border: 2px solid green;
+    width: 80%;
+    
+    height: 350px;
+    padding: 30px;
+}
+/* product individual tag */
+.rt-img{
+    width: 100%;
+    height: 130px;
+    margin-bottom: 0px;
+}
+#rt-product h3{
+    margin-bottom: 0px;
+}
+.fa-solid{
+    height: 0px;
+}
+
+#rt-product p{
+font-weight: 600;
+margin-top: 0%;
+color: grey;
+font-size: medium;
+}
+
+h4{
+    
+    border: 2px solid rgb(30, 0, 255);
+}
+h5{
+   
+    /* margin-left: 40px; */
+    border: 2px solid red;
+}
+.rt-cond_btn{
+    display: flex;
+    
+}
+/* filter product flex */
+.rt-flex{
+    display: flex;
+    width: 85%;
+    margin: auto;
+}
+
+/* filter */
+#filter{
+    margin-right: 30px;
+    border: 1px solid gray;
+    padding: 20px;
+}
+
+
+/* navbar */
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* top nav bar CSS */
+
+.SS_topnav{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 5px;
+    width: 90%;
+}
+
+.SS_topnav > div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.SS_topnav_1 a{
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    text-decoration: none;
+}
+
+.SS_topnav_2 a{
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    text-decoration: none;
+}
+
+.SS_topnav_1{
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-around;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.SS_topnav_2{
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    text-align: center;
+    justify-content: space-around;
+    color: black;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+/* top nav bar CSS completed*/
+
+
+/* main nav bar CSS */
+
+
+.SS_main_navbar{
+    display: flex;
+    margin: auto;
+}
+
+.SS_main_navbar>a{
+    display: flex;
+    margin: auto;
+}
+
+.SS_navbar-logo>img{
+    width:150px ;
+    height: 65px;
+}
+
+.SS-navbar-search{
+    display: flex;
+    margin: auto;
+
+}
+
+.SS-navbar-search>input{
+    width: 350px;
+    height: 40px;
+}
+
+
+.SS-navbar-buttons{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    gap: 40px;
+    
+}
+
+.SS_top_hr{
+    border: 1.5px solid gray;
+}
+
+
+/*main nav bar completed*/
+
+/*drop down menu*/
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .SS_topnav {
+    flex-direction: column;
+  }
+  .SS_topnav > div {
+    margin: 10px 0;
+  }
+  .SS_topnav > div > a {
+    margin: 0 10px;
+  }
+}
