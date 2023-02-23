@@ -2,15 +2,19 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seller Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SELLER DASHBOARD</title>
     <link rel="stylesheet" href="styles/sellerDashboard.css">
-     <!-- Bootstrap CSS -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="../images/ks_SellBuyer.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
@@ -21,7 +25,7 @@
 
         <div>
             <div>
-                <span><i class="fa-solid fa-house"></i></span> 
+                <span><i class="fa-solid fa-house"></i></span>
                 &nbsp; /
                 <span style="color: rgb(66, 66, 189);">Seller Dashboard</span>
             </div>
@@ -46,16 +50,153 @@
     </div>
 
     <div class="ks_filter_section">
-        
+        <div>
+            <p>Filter: </p>
+            <div>
+                <select name="ks_price" id="ks_price">
+                    <option value="">Sort Price</option>
+                    <option value="LTH">low to high</option>
+                    <option value="HTL">high to low</option>
+                </select>
+            </div>
+            <div>
+                <input type="text" placeholder="Search Products Here">
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <i class="fa-solid fa-user-pen"></i>
+                <span>Add/Edit Profile</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-file-export"></i>
+                <span>Export</span>
+            </div>
+            <div>
+                <!-- <button>Add Products</button> -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addProductModal"
+                    data-bs-whatever="@getbootstrap" id="addProductBtn">ADD PRODUCT</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal open when clicked on ADD PRODUCT -->
+    <div class="modal fade" id="addProductModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../images/ks_SellBuyer.png" alt="SellBuyer Logo" class="modal-title" style="width: 150px;">
+                    <h5 class="modal-title" style="margin-left: 35px;">Enter Product Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="addProduct-form">
+                        <div class="mb-0">
+                            <input type="text" class="form-control" minlength="4" id="ks_title_add" style="margin: 15px 0px;" placeholder="Title of Product" required>
+                        </div>
+                        <div class="mb-0">
+                            <select name="Condition" id="ks_category_add" style="margin: 15px 0px;" class="form-control" required>
+                                <option value="">Select Category</option>
+                                <option value="TV">TV</option>
+                                <option value="mobile">Mobile</option>
+                                <option value="Furniture">Furniture</option>
+                                <option value="laptop">Laptop</option>
+                            </select>
+                        </div>
+                        <div class="mb-0">
+                            <select name="Condition" id="ks_condition_add" class="form-control" style="margin: 15px 0px;" required>
+                                <option value="">Select Condition</option>
+                                <option value="Almost Like New">Almost Like New</option>
+                                <option value="Brand New">Brand New</option>
+                                <option value="Gently Used">Gently Used</option>
+                                <option value="Heavily Used">Heavily Used</option>
+                                <option value="Unboxed">Unboxed</option>
+                            </select>
+                        </div>
+                        <div class="mb-0">
+                            <input type="number" class="form-control" id="ks_price_add" style="margin: 15px 0px;" placeholder="Price" required>
+                        </div>
+                        <div class="mb-0">
+                            <input type="text" class="form-control" id="ks_brand_add" style="margin: 15px 0px;" placeholder="Brand Name" required>
+                        </div>
+                        <div class="mb-0">
+                            <input type="text" class="form-control" id="ks_image_add" style="margin: 15px 0px;" placeholder="Image URL" required>
+                        </div>
+                        <div class="mb-2">
+                            <textarea class="form-control" id="ks_desc_add" style="margin: 15px 0px;" placeholder="Description about Product" required></textarea>
+                        </div>
+                        <div class="mb-0">
+                        <input type="submit" class="form-control btn btn-secondary mb-3" id="recipient-name"
+                            value="ADD PRODUCT" style="margin-top: 10px; padding: 10px; font-size: 1.2rem; font-weight: bold;">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+
+    <div class="ks_product_container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Title</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Brand</th>
+                    <th>More Info</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="https://lh3.googleusercontent.com/proxy/s4XgE0s8L7nkx6y83C6F1gfjVZQblZigsRmO5dHFYyXx3775-Hvy1Inhl1hrVog_Dkk0VBv815lxMDhn1ZHPrBoLd47a4q_eRlXntcpWl6Kp8Gk0xSx-j63kxwLWG2o-MxLIhv4d_8Egrg" alt=""/>
+                    </td>
+                    <td> Iphone 13 </td>
+                    <td> mobile </td>
+                    <td> $2500 </td>
+                    <td> apple </td>
+                    <td>
+                        <button id="ks_viewMoreInfo">View More</button>
+                    </td>
+                    <td>
+                        <button id="ks_editProductBtn">Edit</button>
+                    </td>
+                    <td>
+                        <button id="ks_deleteProductbtn">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="ks_emptyDashboard" id="ks_khaliDashboard">
+            <img src="https://teja10.kuikr.com/public/images/img-empty-ads.png" alt="">
+            <div>
+                <p>
+                    Oops! No Ads to display
+                </p>
+                <p>
+                    You do not have any Active ads, to post an ad click <span>here</span>
+                </p>
+            </div>
+        </div>
     </div>
 
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="scripts/sellerDashboard.js"></script>
 </body>
 
 </html>
-
-
