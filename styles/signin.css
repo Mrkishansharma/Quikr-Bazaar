@@ -1,0 +1,90 @@
+body {
+
+    background-image: url("https://i.gifer.com/origin/d0/d09e17b6f52b3676b83e396ab0c04abf.gif");
+
+}
+
+#aman_loginContainer {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+    position: absolute;
+    top: 10%;
+    right: 22%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 2%;
+    
+}
+
+
+#aman_loginContainer>div:nth-child(1) img {
+    width: 80%;
+
+}
+
+#aman_loginContainer>div:nth-child(1)>div>div:nth-child(1){
+    width:20%
+}
+#aman_loginContainer>div:nth-child(1)>div>div:nth-child(2){
+    width:80%
+}
+
+
+#aman_loginContainer>div:nth-child(1)>div {
+    display: flex;
+}
+
+#aman_loginContainer>div {
+    width: 45%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 2%;
+    font-style:unset;
+}
+
+.aman_icon {
+    padding-top: 20px;
+
+}
+
+#aman_loginContainer>div:nth-child(2) img {
+    padding-top: 0px;
+
+}
+
+.aman_inp {
+
+    width: 90%;
+    height: 20px;
+    margin: 10px 0px;
+
+}
+
+#aman_sub {
+    background-color: black;
+    color: white;
+    width: 60%;
+    margin-top: 5%;
+    border: 0px;
+    margin-bottom: 5%;
+    padding: 2%;
+    font-weight: 500;
+}
+
+#aman_sub:hover {
+    background-color: rgb(115, 189, 250);
+   
+}
+
+#aman_createA {
+    color:blue;
+    border : 0px;
+   font-weight: 600;
+}
+#aman_createA:hover{
+  
+  color: black;
+  font-weight: 800;
+
+}
