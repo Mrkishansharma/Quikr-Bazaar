@@ -2,6 +2,7 @@ let main=document.getElementById("rt-container");
 // let low_to_high=document.querySelector("rt-low_to_high")
 // let high_to_low=document.querySelector("rt-high_to_low");
 let data=[]
+let checkBox=document.querySelectorAll("#filter input")
 
 
 
@@ -77,4 +78,10 @@ let dataadd=
     //   // <p>${category}</p>  <h4>${brand}</h4>
 }
 
+let filterdata=(e)=>{
+    console.log(e.target)
+}
 
+checkBox.forEach((input)=>{
+    input.addEventListener("change",filterdata)
+})
