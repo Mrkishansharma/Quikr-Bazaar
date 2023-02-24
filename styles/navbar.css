@@ -78,8 +78,9 @@ header{
     width: 85%;
     position: sticky;
     top: 0;
-    
+    padding: 5px 100px 10px 100px;
     background-color: #FFF;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
 }
 
 .SS_main_navbar>a{
@@ -298,109 +299,7 @@ h3 {
 
 /*----drop down nav completed----*/
 
-/*----main Content ------*/
 
-/*----popular products---*/
-
-.main-container {
-background-color: #F3F3F3;
-display: flex;
-flex-direction: column;
-margin: auto;
-}
-
-.SS_popular {
-width: 85%;
-margin: auto;
-margin-top: 20px;
-}
-
-.popular_products {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-padding: 20px;
-background-color: #FFF;
-}
-
-.SS_popular h2 {
-font-size: 20px;
-text-align: left;
-margin-bottom: 20px;
-}
-
-.product-images {
-display: flex;
-justify-content: space-between;
-}
-
-.product-images img {
-width: 10%;
-height: auto;
-margin: 0 20px;
-}
-
-
-/*----popular products done---*/
-
-/*----buy and sell lists---*/
-
-.BuySell{
-    font-size: 32px;
-    font-weight: 400;
-    text-align: center;
-}
-
-.SS_top_list {
-background-color: #f3f3f3;
-width: 85%;
-display: flex;
-justify-content: center;
-border-radius: 2px;
-gap: 40px;
-padding: 20px;
-margin: auto;
-}
-
-.SS_list_item {
-background-color: #fff;
-border-radius: 2px;
-
-margin: 0 25px;
-}
-
-.SS_list_item img {
-max-width: 100%;
-height: 80px;
-
-}
-
-.SS_list_item ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-}
-
-.SS_list_item li {
-margin-bottom: 10px;
-margin-left: 25px;
-}
-
-.SS_list_item > ul>li>i{
-    
-    font-size: 11px;
-}
-
-.SS_list_item hr {
-width: 85%;
-margin: 0 auto;
-border: none;
-border-top: 1px solid #ccc;
-margin-bottom: 10px;
-}
-
-/*----*/
 
 @media screen and (max-width: 600px) {
   .SS_topnav {
