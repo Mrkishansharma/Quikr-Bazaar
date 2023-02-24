@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SellBuyer</title>
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="icon" href="./images/ks_SellBuyer.png" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c8c131626c.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
+    
         <div class="SS_topnav">
             <div class="SS_topnav_1">
                 <a href=""><i class="fa-solid fa-briefcase"></i>&nbsp; For Businesses</a>
@@ -21,7 +25,7 @@
                 <a href=""><i class="fa-solid fa-tags"></i>&nbsp; Deals</a>
                 <a href=""><i class="fa-solid fa-indian-rupee-sign"></i> &nbsp; Discounts on Premium Ads</a>
                 <a href=""><i class="fa-solid fa-cart-shopping"></i>&nbsp; Cart</a>
-                <a href="" ><i class="fa-regular fa-comments"></i><i>&nbsp; NXT</i></a>
+                <a href=""><i class="fa-regular fa-comments"></i><i>&nbsp; NXT</i></a>
             </div>
         </div>
 
@@ -30,8 +34,12 @@
         <!--Main nav bar-->
 
         <nav class="SS_main_navbar">
-            <a href="/" class="SS_navbar-logo"><img src="images/logo.png" alt="Logo"></a>
+            <a href="/" class="SS_navbar-logo"><img src="images/project-logo1.jpeg" alt="Logo"></a>
+
+            <button class="SS_location"><i class="fa-solid fa-location-dot">&nbsp;</i>Location</button>
+
             <div class="SS-navbar-search">
+
                 <select name="search-category">
                     <option value="">All Categories</option>
                     <option value="category1">Mobiles</option>
@@ -40,11 +48,15 @@
                     <option value="category4">Laptop</option>
                     <option value="category5">Electrical Appliances</option>
                 </select>
+
                 <input type="text" placeholder="Search...">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+
+
             </div>
             <div class="SS-navbar-buttons">
-                <button class="navbar-button">Login</button>
-                <button class="navbar-button">Dashboard</button>
+                <button class="navbar-button"><i class="fa-regular fa-circle-user">&nbsp;</i>Login/Register</button>
+                <button class="navbar-button2">Post Free Ad</button>
             </div>
         </nav>
 
@@ -53,11 +65,323 @@
 
         <!--main nav bar completed-->
 
-        <!--drop down menu-->
+        <!--drop down menu navbar-->
 
 
-        
 
-    </header>
+        <div class="menu-wrapper" role="navigation">
+            <ul class="nav" role="menubar">
+                <li role="menuitem">
+                    <a href="#">Mobiles<i class="fa-solid fa-chevron-down"></i></a>
+                    <div class="mega-menu" aria-hidden="true" role="menu">
+                        <div class="nav-column">
+                            <h3>Mobile Phones</h3>
+                            <ul>
+                                <li role="menuitem"><a href="#">Used Phones</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-column">
+                            <h3>Top Models Used</h3>
+                            <ul>
+                                <li role="menuitem"><a href="#">Iphone 7</a></li>
+                                <li role="menuitem"><a href="#">Iphone 6</a></li>
+                                <li role="menuitem"><a href="#">Iphone 13</a></li>
+                                <li role="menuitem"><a href="#">Galaxy S22</a></li>
+                                <li role="menuitem"><a href="#">Oneplus 7</a></li>
+                            </ul>
+                            <h3>Top Brands Used(Old/New)</h3>
+                            <ul>
+                                <li role="menuitem"><a href="#">Samsung</a></li>
+                                <li role="menuitem"><a href="#">Apple</a></li>
+                                <li role="menuitem"><a href="#">Xiaomi</a></li>
+                                <li role="menuitem"><a href="#">Oneplus</a></li>
+                                <li role="menuitem"><a href="#">Oppo</a></li>
+                                <li role="menuitem"><a href="#">Vivo</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-column">
+                            <h3>Shop by Choice</h3>
+                            <ul>
+                                <li role="menuitem"><a href="#">Item 1</a></li>
+                                <li role="menuitem"><a href="#">Item 2</a></li>
+                                <li role="menuitem"><a href="#">Item 3</a></li>
+                                <li role="menuitem"><a href="#">Item 4</a></li>
+                                <li role="menuitem"><a href="#">Item 5</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="nav-column">
+                            <h3>Tablets</h3>
+                            <ul>
+                                <li role="menuitem"><a href="#">Apple iPad</a></li>
+                                <li role="menuitem"><a href="#">Samsung</a></li>
+                                <li role="menuitem"><a href="#">Oppo</a></li>
+                                <li role="menuitem"><a href="#">Realme</a></li>
+                                <li role="menuitem"><a href="#">Xiaomi</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="nav-column">
+                            <h3>Mobile Accesories</h3>
+                            <ul>
+                                <li role="menuitem"><a href="#">Bluetooth Headset</a></li>
+                                <li role="menuitem"><a href="#">Wired Headphones</a></li>
+                                <li role="menuitem"><a href="#">TWS</a></li>
+                                <li role="menuitem"><a href="#">Charger & Cables</a></li>
+                                <li role="menuitem"><a href="#">Powerbank</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="nav-column">
+                            <h3>Shop By Budget</h3>
+                            <ul>
+                                <li role="menuitem"><a href="#">Below 15000</a></li>
+                                <li role="menuitem"><a href="#">Above 15000</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </li>
+                <li role="menuitem"><a href="#">Furniture & Decor<i class="fa-solid fa-chevron-down"></i></a></li>
+                <li role="menuitem"><a href="#">Electrical Appliances <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li role="menuitem"><a href="#">TV <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li role="menuitem"><a href="#">Laptop<i class="fa-solid fa-chevron-down"></i></a></li>
+            </ul>
+        </div>
+    
+
+    <!--Header - Navigation - Completed-->
+
+
+    <!--main Content-->
+
+    <!--popular products-->
+    <main class="main-container">
+
+        <div class="SS_popular">
+            <h2>Most Popular Products</h2>
+            <div class="popular_products">
+
+                <div class="product-images">
+                    <img src="images/mobiles.png">
+                    <img src="images/laptops.png">
+                    <img src="images/led-tv.png">
+                    <img src="images/other-furnitures.png">
+                    <img src="images/all_electonics_desktop.png">
+                </div>
+            </div>
+        </div>
+
+        <!--popular products done-->
+
+
+        <!--buy and sell lists-->
+
+        <h1 class="BuySell">Buy and Sell from 1200+ Cities Across India</h1>
+
+        <div class="SS_top_list">
+            <div class="SS_list_item">
+                <img src="images/mobiles and tablets.PNG">
+                <ul>
+                    <li>Used Mobiles</li>
+                    <hr>
+                    <li>Tablets</li>
+                    <hr>
+                    <li>Accessories</li>
+                    <hr>
+                    <li>Wearables</li>
+                    <hr>
+                    <li>View all</li>
+                </ul>
+            </div>
+            <div class="SS_list_item">
+                <img src="images/Home and lifestyle.PNG">
+                <ul>
+                    <li>Furniture and Decor</li>
+                    <hr>
+                    <li>Sports, Hobbies & Fashion</li>
+                    <hr>
+                    <li>Luggages</li>
+                    <hr>
+                    <li>Footwear</li>
+                    <hr>
+                    <li>Household Items</li>
+                    <hr>
+                    <li>View All</li>
+                </ul>
+            </div>
+            <div class="SS_list_item">
+                <img src="images/electronics and appliances.PNG">
+                <ul>
+                    <li>Laptop & Accessories</li>
+                    <hr>
+                    <li>TV-DVD-Multimedia</li>
+                    <hr>
+                    <li>Camera & Accessories</li>
+                    <hr>
+                    <li>Home Appliances</li>
+                    <hr>
+                    <li>Kitchen Appliances</li>
+                    <hr>
+                    <li>View All</li>
+                </ul>
+            </div>
+        </div>
+
+        <!--buy and sell lists completed-->
+
+        <!--trending adds first carousel using flickity-->
+
+        <div class="SS_trending_ads">
+            <div>
+                <div class="trend_head">
+                    <h3>Trending Ads</h3>
+                    <button><a href="">View All</a></button>
+                </div>
+                
+                <div class="trend_images">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+            <!-- Flickity HTML init -->
+            </div>
+            <div>
+                <img src="images/trending_ads.png" alt="">
+            </div>
+        </div>
+
+        <div class="SS_mobile_ads">
+            <div>
+                <div class="mobile_head">
+                    <h3>Mobile & Tablets</h3>
+                    <button><a href="">View All</a></button>
+                </div>
+                
+                <div class="mobile_images">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+     
+
+    
+
+
+    <!--footer of the page-->
+
+    <footer>
+        <div class="SS_footer">
+            <div class="left">
+            <ul class="row">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Quikr Videos</a></li>
+                <li><a href="#">Advertise With Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+            <p>Widely known as India’s no. 1 online classifieds platform, Quikr is all about you. Our aim is to empower
+                every person in the country to independently connect with buyers and sellers online. We care about you — and
+                the transactions that bring you closer to your dreams. Want to buy your first car? We’re here for you. Want
+                to sell commercial property to buy your dream home? We’re here for you. Whatever job you’ve got, we promise
+                to get it done.</p>
+            <div class="row">
+                <p>At SellBuyer, you can buy, sell or rent anything you can think of.</p>
+                <button class="btn-post"><a href="#">Post Free Ad</a></button>
+                
+            </div>
+            <br>
+            <br>
+            <br>
+            <ul class="row">
+                <li><a href="#">Listing Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Quikr Mobiles Policy</a></li>
+                <li><a href="#">Quikr Brand Guidelines</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+            <br>
+            <ul class="row">
+                <li><a href="#">Other Brands:</a></li>
+                <li><a href="#">Commonfloor</a></li>
+                <li><a href="#">Hiree</a></li>
+                <li><a href="#">Dazzlr</a></li>
+                <li><a href="#">Realty Compass</a></li>
+                <li><a href="#">Zefo</a></li>
+            </ul>
+        </div>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <hr class="SS_footer_vertical">
+        <div class="right">
+            <div class="row2">
+                <ul>
+                <li><a href="#">Ahmedabad</a></li>
+                <li><a href="#">Bangalore</a></li>
+                <li><a href="#">Chandigarh</a></li>
+                <li><a href="#">Chennai</a></li>
+                <li><a href="#">Coimbatore</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Delhi</a></li>
+                    <li><a href="#">Gurgaon</a></li>
+                    <li><a href="#">Hyderabad</a></li>
+                    <li><a href="#">Jaipur</a></li>
+                    <li><a href="#">Kochi</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Kolkata</a></li>
+                    <li><a href="#">Lucknow</a></li>
+                    <li><a href="#">Mumbai</a></li>
+                    <li><a href="#">Pune</a></li>
+                    <li><a href="#">Trivandrum</a></li>
+                </ul>
+            </div>
+            <p>All Cities</p>
+            <div class="follow-us column">
+                <p class="dark-grey bold">Follow Us: &nbsp;
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-google-plus"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </p>
+                </div>
+                <div class="download-app column">
+                <p class="dark-grey bold">Download the App: &nbsp;
+                        <a href="#"><i class="fab fa-apple"></i></a>
+                        <a href="#"><i class="fab fa-android"></i></a>
+                        <a href="#"><i class="fab fa-windows"></i></a>
+                </p>
+                
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+        <p class="center dark-grey">Copyright © 2008 - 2023 SellBuyer India Private Limited</p>
+        </div>
+        </div>
+    </footer>    
+
+
+
+
 </body>
+<script src="scripts/index.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </html>
