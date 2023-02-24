@@ -1,0 +1,155 @@
+body {
+
+    background-image: url("https://i.gifer.com/origin/d0/d09e17b6f52b3676b83e396ab0c04abf.gif");
+
+}
+
+#aman_loginContainer {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+    position: absolute;
+    top: 5%;
+    right: 22%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 2%;
+
+}
+
+
+#aman_loginContainer>div:nth-child(1) img {
+    width: 80%;
+
+}
+
+#aman_loginContainer>div:nth-child(1)>div>div:nth-child(1) {
+    width: 20%
+}
+
+#aman_loginContainer>div:nth-child(1)>div>div:nth-child(2) {
+    width: 80%
+}
+
+#aman_loginContainer>div:nth-child(1)>div h3 {
+    font-weight: 200;
+
+}
+
+#aman_loginContainer>div:nth-child(1)>div {
+    display: flex;
+
+}
+
+
+#aman_loginContainer>div {
+    width: 45%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 2%;
+    font-style: unset;
+}
+
+.aman_icon {
+    padding-top: 20px;
+
+}
+
+#aman_loginContainer>div:nth-child(2) img {
+    padding-top: 0px;
+
+}
+
+#aman_loginContainer>div:nth-child(2)>h3,
+p {
+    margin: 3px;
+}
+
+#aman_loginContainer>div:nth-child(2)>div img {
+    width: 80%
+}
+
+#aman_loginContainer>div:nth-child(2)>div {
+    display: flex;
+    margin-bottom: 4%;
+    width: 94%;
+}
+
+#aman_loginContainer>div:nth-child(2)>div>div {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    width: 100%;
+    align-items: center;
+}
+
+#aman_loginContainer>div:nth-child(2)>div>div>div {
+
+    width: 30%
+}
+
+#aman_loginContainer>div:nth-child(2)>div>div {
+    border: 1px solid black;
+}
+
+#aman_loginContainer>div:nth-child(2)>div>div:hover {
+    background-color: rgb(192, 194, 194);
+}
+
+
+
+.aman_inp {
+
+    width: 90%;
+    height: 20px;
+    margin: 8px 0px;
+
+}
+
+#aman_sub {
+    background-color: rgb(115, 189, 250);
+    color: white;
+    width: 93%;
+    margin-top: 5%;
+    border: 0px;
+    margin-bottom: 5%;
+    padding: 2%;
+    font-weight: 500;
+}
+
+#aman_sub:hover {
+
+    background-color: black;
+
+}
+
+#aman_createA {
+    color: blue;
+    border: 0px;
+    font-weight: 600;
+}
+
+#aman_createA:hover {
+
+    color: black;
+
+
+}
+
+@media screen and (min-width:0px) and (max-width: 900px) {
+
+    #aman_loginContainer {
+
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    #aman_loginContainer>div {
+
+        width: 100%;
+
+    }
+
+}
