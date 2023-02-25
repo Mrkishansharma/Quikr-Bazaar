@@ -18,17 +18,88 @@
 
     <!-- xlsx -->
     <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <!-- <link rel="icon" href="../images/ks_SellBuyer.png" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <!-- <script src="https://kit.fontawesome.com/c8c131626c.js" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
-    <header>
+   
 
-    </header>
+
+
+    <div class="SS_topnav">
+        <div class="SS_topnav_1">
+            <a href=""><i class="fa-solid fa-briefcase"></i>&nbsp; For Businesses</a>
+            <a href=""><i class="fa-solid fa-download"></i>&nbsp; Download App</a>
+        </div>
+        <div class="SS_topnav_2">
+            <a href=""><i class="fa-solid fa-tags"></i>&nbsp; Deals</a>
+            <a href=""><i class="fa-solid fa-indian-rupee-sign"></i> &nbsp; Discounts on Premium Ads</a>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i>&nbsp; Cart</a>
+            <a href=""><i class="fa-regular fa-comments"></i><i>&nbsp; NXT</i></a>
+        </div>
+    </div>
+
+    <!--top nav bar finished-->
+
+    <!--Main nav bar-->
+
+    <nav class="SS_main_navbar">
+        <a href="/" class="SS_navbar-logo"><img src="../images/project-logo1.jpeg" alt="Logo"></a>
+
+        <button class="SS_location"><i class="fa-solid fa-location-dot">&nbsp;</i>Location</button>
+
+        <div class="SS-navbar-search">
+
+            <select name="search-category">
+                <option value="">All Categories</option>
+                <option value="category1">Mobiles</option>
+                <option value="category2">TV</option>
+                <option value="category3">Furniture</option>
+                <option value="category4">Laptop</option>
+                <option value="category5">Electrical Appliances</option>
+            </select>
+
+            <input type="text" placeholder="Search...">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+
+
+        </div>
+        <div class="SS-navbar-buttons">
+            <p id="loginUserName"></p>
+            <button class="navbar-button" id="loginLogourButton">
+                <!-- <i class="fa-regular fa-circle-user">&nbsp;</i>Login/Register -->
+            </button>
+            <button class="navbar-button2" id="showDashboardBtn">Post Free Ad</button>
+        </div>
+    </nav>
+
+    <hr class="SS_top_hr">
+
+
+    <!--main nav bar completed-->
+
+
+
+
+
+
+
+
+
+
     <div class="ks_top_section">
 
         <div>
             <div>
-                <span><i class="fa-solid fa-house"></i></span>
+                <span><a href="../index.html"><i class="fa-solid fa-house"></i></a> </span>
                 &nbsp; /
                 <span style="color: rgb(66, 66, 189);">Seller Dashboard</span>
             </div>
@@ -335,6 +406,10 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="scripts/sellerDashboard.js"></script>
+
+    <!-- <script src="../scripts/index.js"></script> -->
+<script src="../scripts/navbar.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
 </html>

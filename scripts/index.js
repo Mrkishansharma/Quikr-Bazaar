@@ -4,7 +4,7 @@
 //fetch data from products api for trending ads
 
 const trendImages = document.querySelector(".trend_images");
-
+ 
 fetch("https://63f71d1fe8a73b486af0e017.mockapi.io/products?category=Furniture")
   .then((response) => response.json())
   .then((data) => {
@@ -57,6 +57,13 @@ fetch("https://63f71d1fe8a73b486af0e017.mockapi.io/products?category=Furniture")
         const viewBtn = document.createElement("button");
         viewBtn.textContent = "View";
         viewBtn.style.display = "block";
+
+        viewBtn.addEventListener("click",()=>{
+          // console.log(product.id);
+          localStorage.setItem("currentProductDetails_SellBuyer",JSON.stringify(product))
+          location.href = "productDetails.html"
+        })
+
         viewBtnDiv.appendChild(viewBtn);
         div.appendChild(viewBtnDiv);
 
@@ -127,6 +134,13 @@ fetch("https://63f71d1fe8a73b486af0e017.mockapi.io/products?category=Furniture")
           const viewBtn = document.createElement("button");
           viewBtn.textContent = "View";
           viewBtn.style.display = "block";
+
+          viewBtn.addEventListener("click",()=>{
+            // console.log(product.id);
+            localStorage.setItem("currentProductDetails_SellBuyer",JSON.stringify(product))
+            location.href = "productDetails.html"
+          })
+
           viewBtnDiv.appendChild(viewBtn);
           div.appendChild(viewBtnDiv);
 
@@ -194,6 +208,13 @@ fetch("https://63f71d1fe8a73b486af0e017.mockapi.io/products?category=Furniture")
          const viewBtn = document.createElement("button");
          viewBtn.textContent = "View";
          viewBtn.style.display = "block";
+
+         viewBtn.addEventListener("click",()=>{
+          console.log(product.id);
+          localStorage.setItem("currentProductDetails_SellBuyer",JSON.stringify(product))
+          location.href = "productDetails.html"
+        })
+
          viewBtnDiv.appendChild(viewBtn);
          div.appendChild(viewBtnDiv);
 
@@ -261,6 +282,13 @@ fetch("https://63f71d1fe8a73b486af0e017.mockapi.io/products?category=TV")
         const viewBtn = document.createElement("button");
         viewBtn.textContent = "View";
         viewBtn.style.display = "block";
+
+        viewBtn.addEventListener("click",()=>{
+          console.log(product.id);
+          localStorage.setItem("currentProductDetails_SellBuyer",JSON.stringify(product))
+          location.href = "productDetails.html"
+        })
+
         viewBtnDiv.appendChild(viewBtn);
         div.appendChild(viewBtnDiv);
 
@@ -273,3 +301,13 @@ fetch("https://63f71d1fe8a73b486af0e017.mockapi.io/products?category=TV")
     });
   })
   .catch((error) => console.error(error));
+
+
+
+
+
+
+
+  function goToProductPage(){
+    location.href = "product.html"
+  }
