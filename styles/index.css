@@ -109,7 +109,7 @@ margin-bottom: 10px;
     display: flex;
     margin: auto;
     width: 85%;
-    
+    padding-bottom: 15px;
     margin-bottom: 30px;
     background-color: #fff;
     justify-content: space-around;
@@ -163,7 +163,8 @@ margin-bottom: 10px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 20px;
+  gap: 10px;
 }
 
 .product img {
@@ -213,6 +214,7 @@ margin-bottom: 10px;
     margin-bottom: 30px;
     background-color: #fff;
     justify-content: space-around;
+    padding-bottom: 15px;
 }
 
 
@@ -264,6 +266,14 @@ margin-bottom: 10px;
   align-items: center;
   justify-content: center;
   padding: 10px;
+  background-color: #F5F5F5;
+  border: 1px solid #EEEEEE;
+  gap: 10px;
+}
+
+.product:hover{
+    box-shadow: #3498db 0px 2px 5px -1px, #3498db 0px 1px 3px -1px;
+    background-color: #FAFAFA;
 }
 
 .product img {
@@ -286,15 +296,142 @@ margin-bottom: 10px;
   color: #fff;
   border: none;
   padding: 8px 16px;
-  border-radius: 4px;
+  border-radius: 3px;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
-  margin-top: 10px;
+  
 }
 
 
 .product button:hover {
   background-color: #2980b9;
+}
+
+
+/*------home & lifestyle-----*/
+
+
+.SS_home{
+    display: flex;
+    margin: auto;
+    width: 85%;
+    
+    margin-bottom: 30px;
+    background-color: #fff;
+    justify-content: space-around;
+    padding-bottom: 15px;
+}
+
+
+.home_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: auto;
+}
+
+.home_head h3 {
+  margin: 0;
+  
+}
+
+.home_head>button{
+  margin: 0;
+  text-decoration: none;
+  border: none;
+  background-color: #3498db;
+  border-radius: 2px;
+  height: 30px;
+  width: 80px;
+}
+
+.home_head button:hover {
+  background-color: #2980b9;
+}
+
+.home_head>button>a{
+  color: #F3F3F3;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.home_images {
+  display: flex;
+  justify-content: space-between;
+  width: 1080px;
+}
+
+
+
+/*------electronics and appliances-----*/
+
+.SS_electronics{
+    display: flex;
+    margin: auto;
+    width: 85%;
+    
+    margin-bottom: 30px;
+    background-color: #fff;
+    justify-content: space-around;
+    padding-bottom: 15px;
+}
+
+
+.electronics_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: auto;
+}
+
+.electronics_head h3 {
+  margin: 0;
+  
+}
+
+.electronics_head>button{
+  margin: 0;
+  text-decoration: none;
+  border: none;
+  background-color: #3498db;
+  border-radius: 2px;
+  height: 30px;
+  width: 80px;
+}
+
+.electronics_head button:hover {
+  background-color: #2980b9;
+}
+
+.electronics_head>button>a{
+  color: #F3F3F3;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.electronics_images {
+  display: flex;
+  justify-content: space-between;
+  width: 1080px;
+}
+
+
+/*----browse by category---*/
+
+.SS_category{
+    width: 89%;
+    display: flex;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.SS_category>img{
+    display: flex;
+    margin: auto;
 }
 
 
