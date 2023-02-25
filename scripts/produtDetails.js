@@ -63,6 +63,6 @@ buy_form.addEventListener("submit", (e)=>{
         }
     }else{
         alert("Please Login first")
-        location.href = "login.html"
+        location.href = "signin.html"
     }
 })
