@@ -24,7 +24,12 @@ async function fetchUserOwnProducts(id){
 
 let ks_tbody_ownProducts = document.getElementById("ks_tbody_ownProducts")
 function displayUserOwnProducts(data){
-    ks_tbody_ownProducts.innerHTML = data.map(ele=> getTBodyData(ele) ).join()
+    if(data.length){
+        ks_tbody_ownProducts.innerHTML = data.map(ele=> getTBodyData(ele) ).join()
+    }else{
+        let ks_khaliDashboard1 = document.getElementById("ks_khaliDashboard");
+        ks_khaliDashboard1.style.display = "flex"
+    }
 }
 
 function getTBodyData(ele){
