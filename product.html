@@ -48,7 +48,7 @@
 
  
      <div class="rt-flex">
-      <div id="filter">
+      <div id="rt-filter">
         <h2 style="margin-bottom: 30px;">Filter By Category</h2>
           <div style="margin-bottom: 50px;">
             <label for="">TV</label>
@@ -73,25 +73,25 @@
           
            <div style="margin-bottom: 50px;">
             <label for="">Almost like New</label>
-            <input type="checkbox" id="" />
+            <input type="checkbox" id=""name="Almost like New" />
            
           </div>
          
           <div style="margin-bottom: 50px;">
             <label for="">Brand New</label>
-            <input type="checkbox" id="" />
+            <input type="checkbox" id="" name="Brand New"/>
           </div>
           <div style="margin-bottom: 50px;">
             <label for="">Heavily Used</label>
-            <input type="checkbox" id="" />
+            <input type="checkbox" id="" name="Heavily Used"/>
           </div>
           <div style="margin-bottom: 50px;">
             <label for="">Gently Used</label>
-            <input type="checkbox" id="" />
+            <input type="checkbox" id="" name="Gently Used"/>
           </div>
           <div style="margin-bottom: 50px;"> 
             <label for="">Unboxed</label>
-            <input type="checkbox" id="" />
+            <input type="checkbox" id="" name="Unboxed" />
           </div> 
       </div>
 
@@ -99,12 +99,12 @@
         <div id="rt-sort">
           <p>sort by:</p>
           <h4>Popularity</h4>
-          <h4 >New Approval</h4>
-          <h4 onclick="low_to_high()">Price-Low to High</h4>
-          <h4 onclick="high_to_low()">Price-High to Low</h4>
+          <h4 onclick="showAllProducts_ran()">New Approval</h4>
+          <h4 onclick="low_to_high_ran()">Price-Low to High</h4>
+          <h4 onclick="high_to_low_ran()">Price-High to Low</h4>
           <h5><i class="fa-sharp fa-solid fa-location-dot"></i>Set Your Pincode</h5>
         </div>
-
+    
         <div id="rt-container">
         </div>
       </div>
