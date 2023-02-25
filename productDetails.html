@@ -19,25 +19,41 @@
     <div id="aman_products">
 
         <div>
-            <img src="https://m.media-amazon.com/images/I/51WZ+kWDDfL._SX466_.jpg" alt="">
+            <img src="https://m.media-amazon.com/images/I/51WZ+kWDDfL._SX466_.jpg" alt="" id="detailPage_img">
         </div>
         <div>
-            <p>condition - title</p>
-              <h3>title</h3>
+            <p id="detailpage_condition">condition - title</p>
+              <h3 id="detailpage_title">title</h3>
               <p>Delhi Posted 19 Minutes Ago</p>
-              <h4>price</h4>
+              <h4 id="detailpage_price">price</h4>
               <div>
-                <div type="text" class="btn btn-primary" data-toggle="modal" data-target="#callBtnModal">
+                <div style="font-size:xx-large;" type="text" class="btn btn-primary" data-toggle="modal" data-target="#callBtnModal">
                         CALL
                 </div>
-                <div type="text" class="btn btn-primary" data-toggle="modal" data-target="#callBtnModal">
-                    CHAT
+                <div style="font-size:xx-large;" type="text" class="btn btn-primary" data-toggle="modal" data-target="#buyBtnModal">
+                    BUY
             </div>
               </div>
-              <div>
+              <div style="width:70%; margin: auto;">
                 <img src="/images/productpageImage.png" alt="">
               </div>
         </div>
+
+    </div>
+
+    <div>
+        <h2>Product Details</h2>
+        <div>
+            <h4>Product ID :- id</h4>
+        <h4>Condition :- Brand New</h4>
+        <h4>
+            Brand : brand 
+        </h4>
+        <h4>Brand Name :-Apple
+        </h4>
+        <h4>Product Type:- Laptop</h4>
+        </div>
+
     </div>
 
 
@@ -45,12 +61,9 @@
 
 
 
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#callBtnModal">
-        Call
-    </button>
+    
 
-    <!-- Modal -->
+    <!-- Modal open when click on call button -->
     <div class="modal fade" id="callBtnModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -62,12 +75,43 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                     
+                     <div>
+                        <p id="seller_name">Name: kishan sharma</p>
+                        <p id="seller_email">email: kishan sharma@gmail.com</p>
+                        <p id="seller_phone">phone number: 637752045455</p>
+                     </div>
                 </div>
-                <div class="modal-footer">
+                <!-- <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- modal open when click on buy -->
+    <div class="modal fade" id="buyBtnModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
+                <form  id="buy--form">
+                <div class="modal-body">
+                        <input type="text" placeholder="Name" id="buy_name" required>
+                        <input type="number" placeholder="Phone Number" id="buy_number" required >
+                        <input type="email" placeholder="Email" id="buy_email" required>
+                        <input type="number" placeholder="Pin Code" id="buy_pincode" required>
+                        <textarea name="address" id="buy_address" cols="30" rows="4" placeholder="Address..." required></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Order</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -95,4 +139,5 @@
 
 </body>
 
+<script src="/scripts/produtDetails.js"></script>
 </html>

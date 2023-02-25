@@ -1,3 +1,4 @@
+
 #aman_products{
 display: flex;
 width:100%;
@@ -9,7 +10,8 @@ border: 2px solid red ;
 }
 #aman_products>div>img{
 width:100%;
-height:200px
+height:500px;
+
 }
 #aman_products>div:nth-child(2) h4+div{
     display: flex;
