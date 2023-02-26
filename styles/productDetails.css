@@ -1,26 +1,75 @@
 
 #aman_products{
 display: flex;
-width:100%;
+width:85%;
+margin: auto;
 }
+
 
 #aman_products>div{
 width:50% ;
-border: 2px solid red ;
+
+
 }
 #aman_products>div>img{
 width:100%;
 height:500px;
 
 }
-#aman_products>div:nth-child(2) h4+div{
+#aman_products>div:nth-child(2) h3+div{
     display: flex;
     justify-content: space-around;
     text-align: center;
 }
-#aman_products>div:nth-child(2) h4+div >div{
+#aman_products>div:nth-child(2) h3+div >div{
     
     background-color: rgb(15, 125, 250);
     width: 40%;
     
+}
+#aman_products>div:nth-child(2){
+    padding-left: 10px;
+}
+.aman_produt_div1 > h4 ,h3 ,div {
+margin-top: 5px;
+margin-bottom: 0px;
+}
+
+#aman_products>div:nth-child(2) div {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+#aman_product_details_lower{
+display: flex;
+width: 100%;
+margin-top: 20px;
+justify-content: space-between;
+}
+#aman_product_details_lower>div:nth-child(1){
+width: 70%;
+margin-left: 5px;
+
+}
+#aman_product_details_lower>div:nth-child(1)>h4{
+ margin-bottom: 1px;
+}
+
+#aman_product_details_lower h4{
+    font-weight: 450;
+}
+#aman_product_details_lower span{
+    font-weight: 620;
+}
+#aman_product_detls{
+  margin: 5px;
+  border-bottom: 4px solid blue;
+  width:30%;
+  font-size: 40px;
+}
+.modal-body input ,textarea{
+display: block;
+width:85%;
+margin: auto;
+padding-bottom: 5px;
+margin-bottom: 5px;
 }

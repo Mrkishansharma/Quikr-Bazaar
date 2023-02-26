@@ -66,3 +66,24 @@ buy_form.addEventListener("submit", (e)=>{
         location.href = "signin.html"
     }
 })
+
+
+
+let details_id = document.getElementById("aman_product_id")
+details_id.innerText = currProduct_am.id
+
+let details_condition = document.getElementById("aman_product_condition")
+details_condition.innerText = currProduct_am.condition
+
+let details_brand = document.getElementById("aman_product_BrandName")
+
+details_brand.innerText = currProduct_am.brand;
+
+
+let details_category = document.getElementById("aman_product_type")
+details_category.innerText = currProduct_am.category;
+
+let details_desc = document.getElementById("aman_product_details");
+
+details_desc.innerText = currProduct_am.description
+
