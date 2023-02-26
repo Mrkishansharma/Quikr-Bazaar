@@ -9,44 +9,64 @@
     <script src="https://kit.fontawesome.com/521023a70c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- <header>
-    <div class="SS_topnav">
-        <div class="SS_topnav_1">
-            <a href=""><i class="fa-solid fa-briefcase"></i>&nbsp; For Businesses</a>
-            <a href=""><i class="fa-solid fa-download"></i>&nbsp; Download App</a>
-        </div>
-        <div class="SS_topnav_2">
-            <a href=""><i class="fa-solid fa-tags"></i>&nbsp; Deals</a>
-            <a href=""><i class="fa-solid fa-indian-rupee-sign"></i> &nbsp; Discounts on Premium Ads</a>
-            <a href=""><i class="fa-solid fa-cart-shopping"></i>&nbsp; Cart</a>
-            <a href="" ><i class="fa-regular fa-comments"></i><i>&nbsp; NXT</i></a>
-        </div>
+
+
+  <!-- ***********navbar********** -->
+  <div class="SS_topnav">
+    <div class="SS_topnav_1">
+        <a href=""><i class="fa-solid fa-briefcase"></i>&nbsp; For Businesses</a>
+        <a href=""><i class="fa-solid fa-download"></i>&nbsp; Download App</a>
     </div>
+    <div class="SS_topnav_2">
+        <a href=""><i class="fa-solid fa-tags"></i>&nbsp; Deals</a>
+        <a href=""><i class="fa-solid fa-indian-rupee-sign"></i> &nbsp; Discounts on Premium Ads</a>
+        <a href=""><i class="fa-solid fa-cart-shopping"></i>&nbsp; Cart</a>
+        <a href=""><i class="fa-regular fa-comments"></i><i>&nbsp; NXT</i></a>
+    </div>
+</div>
 
-    top nav bar finished-->
+<!--top nav bar finished-->
 
-    <!--Main nav bar-->
+<!--Main nav bar-->
 
-    <!-- <nav class="SS_main_navbar">
-        <a href="/" class="SS_navbar-logo"><img src="images/logo.png" alt="Logo"></a>
-        <div class="SS-navbar-search">
-            <select name="search-category">
-                <option value="">All Categories</option>
-                <option value="category1">Mobiles</option>
-                <option value="category2">TV</option>
-                <option value="category3">Furniture</option>
-                <option value="category4">Laptop</option>
-                <option value="category5">Electrical Appliances</option>
-            </select>
-            <input type="text" placeholder="Search...">
-        </div>
-        <div class="SS-navbar-buttons">
-            <button class="navbar-button">Login</button>
-            <button class="navbar-button">Dashboard</button>
-        </div>
-    </nav> --> 
+<nav class="SS_main_navbar">
+    <a href="/" class="SS_navbar-logo"><img src="images/project-logo1.jpeg" alt="Logo"></a>
 
- 
+    <button class="SS_location"><i class="fa-solid fa-location-dot">&nbsp;</i>Location</button>
+
+    <div class="SS-navbar-search">
+
+        <select name="search-category">
+            <option value="">All Categories</option>
+            <option value="category1">Mobiles</option>
+            <option value="category2">TV</option>
+            <option value="category3">Furniture</option>
+            <option value="category4">Laptop</option>
+            <option value="category5">Electrical Appliances</option>
+        </select>
+
+        <input type="text" placeholder="Search...">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+
+
+    </div>
+    <div class="SS-navbar-buttons">
+        <p id="loginUserName"></p>
+        <button class="navbar-button" id="loginLogourButton">
+            <!-- <i class="fa-regular fa-circle-user">&nbsp;</i>Login/Register -->
+        </button>
+        <button class="navbar-button2" id="showDashboardBtn">Post Free Ad</button>
+    </div>
+</nav>
+
+<hr class="SS_top_hr">
+
+
+
+
+ <!-- **********product filter********* -->
+
+
      <div class="rt-flex">
       <div id="rt-filter">
         <h2 style="margin-bottom: 30px;">Filter By Category</h2>
@@ -95,6 +115,9 @@
           </div> 
       </div>
 
+
+      <!-- ******product container****************** -->
+
       <div id="rt-sort_container">
         <div id="rt-sort">
           <p>sort by:</p>
@@ -107,14 +130,125 @@
     
         <div id="rt-container">
         </div>
+        <div id="pagination-wrapper"></div>
       </div>
 
-          <!-- product -->
+         
           
           </div>
+
+
+          <!-- end of product -->
+
+
+
+
+
+          <!--footer of the page-->
+
+    <footer>
+      <div class="SS_footer">
+          <div class="left">
+          <ul class="row">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Quikr Videos</a></li>
+              <li><a href="#">Advertise With Us</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Help</a></li>
+          </ul>
+          <p>Widely known as India’s no. 1 online classifieds platform, Quikr is all about you. Our aim is to empower
+              every person in the country to independently connect with buyers and sellers online. We care about you — and
+              the transactions that bring you closer to your dreams. Want to buy your first car? We’re here for you. Want
+              to sell commercial property to buy your dream home? We’re here for you. Whatever job you’ve got, we promise
+              to get it done.</p>
+          <div class="row">
+              <p>At SellBuyer, you can buy, sell or rent anything you can think of.</p>
+              <button class="btn-post"><a href="#">Post Free Ad</a></button>
+              
+          </div>
+          <br>
+          <br>
+          <br>
+          <ul class="row">
+              <li><a href="#">Listing Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Quikr Mobiles Policy</a></li>
+              <li><a href="#">Quikr Brand Guidelines</a></li>
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="#">News</a></li>
+          </ul>
+          <br>
+          <ul class="row">
+              <li><a href="#">Other Brands:</a></li>
+              <li><a href="#">Commonfloor</a></li>
+              <li><a href="#">Hiree</a></li>
+              <li><a href="#">Dazzlr</a></li>
+              <li><a href="#">Realty Compass</a></li>
+              <li><a href="#">Zefo</a></li>
+          </ul>
+      </div>
+      &nbsp;
+      &nbsp;
+      &nbsp; 
+      &nbsp;
+      <hr class="SS_footer_vertical">
+      <div class="right">
+          <div class="row2">
+              <ul>
+              <li><a href="#">Ahmedabad</a></li>
+              <li><a href="#">Bangalore</a></li>
+              <li><a href="#">Chandigarh</a></li>
+              <li><a href="#">Chennai</a></li>
+              <li><a href="#">Coimbatore</a></li>
+              </ul>
+              <ul>
+                  <li><a href="#">Delhi</a></li>
+                  <li><a href="#">Gurgaon</a></li>
+                  <li><a href="#">Hyderabad</a></li>
+                  <li><a href="#">Jaipur</a></li>
+                  <li><a href="#">Kochi</a></li>
+              </ul>
+              <ul>
+                  <li><a href="#">Kolkata</a></li>
+                  <li><a href="#">Lucknow</a></li>
+                  <li><a href="#">Mumbai</a></li>
+                  <li><a href="#">Pune</a></li>
+                  <li><a href="#">Trivandrum</a></li>
+              </ul>
+          </div>
+          <p>All Cities</p>
+          <div class="follow-us column">
+              <p class="dark-grey bold">Follow Us: &nbsp;
+                  <a href="https://www.facebook.com/QuikrFans"><i class="fab fa-facebook"></i></a>
+                  <a href="https://www.linkedin.com/company/quikr/"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://plus.google.com/108295975916565007121?prsrc=3"><i class="fab fa-google-plus"></i></a>
+                  <a href="https://twitter.com/quikr"><i class="fab fa-twitter-square"></i></a>
+                  <a href="https://www.youtube.com/channel/pLtpHTmLXwgNMA_OXvOQew?sub_confirmation=1&themeRefresh=1"><i class="fab fa-youtube"></i></a>
+              </p>
+              </div>
+              <div class="download-app column">
+              <p class="dark-grey bold">Download the App: &nbsp;
+                      <a href="https://apps.apple.com/in/app/quikr-free-local-classifieds/id632051273"><i class="fab fa-apple"></i></a>
+                      <a href="https://play.google.com/store/apps/details?id=com.quikr&referrer=utm_source%3Dwebsite%26utm_medium%3Dwebsite&pli=1"><i class="fab fa-android"></i></a>
+                      <a href="https://apps.microsoft.com/store/apps?hl=en-us&gl=US"><i class="fab fa-windows"></i></a>
+              </p>
+              
+              </div>
+
+          </div>
+      </div>
+      <div class="copyright">
+      <p class="center dark-grey">Copyright © 2008 - 2023 SellBuyer India Private Limited</p>
+      </div>
+      </div>
+  </footer> 
 
           
     
 </body>
 <script src="./scripts/products.js"></script>
+<script src="./scripts/navbar.js"></script>
 </html>

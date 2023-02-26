@@ -1,7 +1,8 @@
 let main = document.getElementById("rt-container");
 let checkBox = document.querySelectorAll("#rt-filter input")
 let data = []
-
+let rt_pagination=document.getElementById("pagination-wrapper")
+let url="https://63f71d1fe8a73b486af0e017.mockapi.io"
 
 
 
@@ -9,12 +10,33 @@ let data = []
 
 // fetching api
 fetching()
-async function fetching() {
-    let resp = await fetch("https://63f71d1fe8a73b486af0e017.mockapi.io/products");
+async function fetching(page=1) {
+    let resp = await fetch(`${url}/products?limit=20&pages=${page}`);
+    let rt_total_item=resp.headers.get('X-Total-Count');
+    console.log("x-taol===>",rt_total_item);
+    let rt_total_pages=Math.ceil(rt_total_item/10)
     resp = await resp.json()
     data = resp
+    rt_paginationbtn(rt_total_pages)
     render_ran(resp)
     
+}
+// pagination
+function rt_paginationbtn(page){
+    let btn=[]
+    for(let i=1; i<=page; i++){
+        btn.push(`<button class='pagination-button' data-page-number=${i}>${i}</button>`)
+    }
+
+    rt_pagination.innerHTML=btn.join("");
+
+    let all_btn=document.querySelectorAll("#pagination-wrapper button")
+
+    for(let btn of all_btn){
+        btn.addEventListener("click",(e)=>{
+            fetching(e.target.dataset.pageNumber);
+        })
+    }
 }
 
 
@@ -116,9 +138,11 @@ let filterdata_ran = (e) => {
     let filterdata = data.filter((item) => {
         let flag = false;
         for (let a of arr) {
-            if (a === item.category || a === item.condition) {
+            if (a === item.category|| a==item.condition ) {
                 flag = true;
             }
+            
+            
         }
         if (flag) {
             return true
