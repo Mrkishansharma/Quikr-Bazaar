@@ -29,3 +29,9 @@ form.addEventListener("submit", function LoginUser(e) {
 });
 
 
+
+function goToIndexPage(){
+    location.href = "index.html"
+}
+
+

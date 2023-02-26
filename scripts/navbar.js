@@ -43,7 +43,8 @@ loginLogourButton.addEventListener("click",(e)=>{
 
 showDashboardBtn.addEventListener("click",()=>{
   if(currentLogedInUserId_SellBuyer1){
-    location.href = "../sellerDashboard/sellerDashboard.html"
+    // console.log("seller Dashboard");
+    location.href = "sellerDashboard/sellerDashboard.html"
   }else{
     alert("Please Login first!")
   }

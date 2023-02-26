@@ -39,6 +39,7 @@ signupForm.addEventListener("submit", async function RegisterUser(e) {
             let rs = await register_request.json()
             // console.log("success==>",rs);
             alert("Successfully created")
+            location.href = "signin.html"
         } catch (error) {
             alert("Something went wrong", error.message);
         }
