@@ -113,7 +113,7 @@ function getcard_ran(obj) {
 // to productdetail page
 
 function normal_ran(event,idd) {
-    console.log("idd====>",idd)
+    // console.log("idd====>",idd)
     // console.log("id====>",event.target.dataset.id)
     console.log(event)
     let selectedProduct_ran  = data.filter((ele)=>{
@@ -164,3 +164,16 @@ checkBox.forEach((input) => {
 
 
 
+let SS_navbar_search = document.querySelector(".SS-navbar-search > input")
+console.log("searchbar==>",SS_navbar_search);
+
+SS_navbar_search.addEventListener("input",(e)=>{
+  console.log(e.target.value);
+  fetch(`https://63f71d1fe8a73b486af0e017.mockapi.io/products?search=${e.target.value}`)
+  .then(res=>{
+    return res.json()
+  }).then(data =>{
+    console.log("productdata==>",data);
+    render_ran(data)
+  })
+})

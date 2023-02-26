@@ -311,3 +311,14 @@ fetch("https://63f71d1fe8a73b486af0e017.mockapi.io/products?category=TV")
   function goToProductPage(){
     location.href = "product.html"
   }
+
+
+
+  
+let SS_navbar_search = document.querySelector(".SS-navbar-search > input")
+// console.log("searchbar==>",SS_navbar_search);
+
+SS_navbar_search.addEventListener("input",(e)=>{
+  location.href = "product.html"
+  
+})

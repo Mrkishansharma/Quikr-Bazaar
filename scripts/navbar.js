@@ -1,7 +1,3 @@
-
-
-
-
 let currentLogedInUserId_SellBuyer1 = localStorage.getItem("currentLogedInUserId_SellBuyer") || null;
 
 let userData_ks = {}
@@ -52,3 +48,6 @@ showDashboardBtn.addEventListener("click",()=>{
     alert("Please Login first!")
   }
 })
+
+
+

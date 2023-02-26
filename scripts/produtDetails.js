@@ -87,3 +87,13 @@ let details_desc = document.getElementById("aman_product_details");
 
 details_desc.innerText = currProduct_am.description
 
+
+
+
+let SS_navbar_search = document.querySelector(".SS-navbar-search > input")
+// console.log("searchbar==>",SS_navbar_search);
+
+SS_navbar_search.addEventListener("input",(e)=>{
+  location.href = "product.html"
+  
+})
