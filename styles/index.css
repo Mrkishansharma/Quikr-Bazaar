@@ -457,7 +457,7 @@ justify-content: flex-start;
 align-items: flex-end;
 width: 30%;
 }
-.row {
+.row1{
 display: flex;
 justify-content: flex-start;
 align-items: center;
@@ -544,6 +544,7 @@ display: flex;
 justify-content: flex-start;
 align-items: center;
 flex-wrap: wrap;
+margin-left: 30px;
 }
 
 .btn-post{
@@ -569,7 +570,7 @@ align-items: center;
 flex-direction: column;
 }
 
-.row {
+.row1 {
 display: flex;
 flex-wrap: wrap;
 justify-content: flex-start;
@@ -577,13 +578,14 @@ align-items: center;
 padding: 0;
 margin: 0;
 list-style: none;
+
 }
 
-.row li {
+.row1 li {
 margin-right: 20px;
 }
 
-.row li:last-child {
+.row1 li:last-child {
 margin-right: 0;
 }
 
@@ -659,7 +661,7 @@ margin-top: 30px;
 flex-direction: row;
 }
 
-.row li {
+.row1 li {
 margin-right: 10px;
 }
 
