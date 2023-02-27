@@ -1,5 +1,7 @@
 # dull-party-2583
 
+Deployed Link:- https://sellbuyer-app.netlify.app/
+
 Hii Guys this is Quikr clone website created by
 
 1. Kishan Sharma(Mrkishansharma) 2.Subhransu Pradhan(DYNAMICWARRIOR) 3.Aman Choure(amanacr0358) 4.Ranvijay Tiwari(RanvijayTiwari)
@@ -16,3 +18,7 @@ Tech Stacks Used: 1.HTML 2.CSS 3.JAVASCRIPT 4. BOOTSTRAP
 Kishan Sharma LinkedIn linkdin :https://www.linkedin.com/in/kishan-sharma6377/ , git profile :https://github.com/Mrkishansharma,
 
 Subhransu Pradhan linkdin :https://www.linkedin.com/in/subhransu-sekhar-pradhan-41953713a/, git profile : https://github.com/DYNAMICWARRIOR
+
+Aman Choure LinkedIn: https://www.linkedin.com/in/aman-choure-080199248  git Profile: https://github.com/amanacr0358
+
+Ranvijay Tiwari LinkedIn : https://www.linkedin.com/in/ranvijay-tiwari-a6636b219/ git Profile : https://github.com/RanvijayTiwari
